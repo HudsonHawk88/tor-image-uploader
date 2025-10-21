@@ -2,6 +2,7 @@ import requests
 from uploader.uploader import Uploader
 
 class Ecwid:
+
     def __init__(self, storeid, secrettoken):
         self.baseurl = "https://api.ecwid.com/api/v3/" + storeid
         self.uploader = Uploader()
